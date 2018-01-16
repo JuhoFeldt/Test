@@ -14,6 +14,8 @@ namespace ThreadTest1
             // create the thread
             Thread workerThread1 = new Thread(workerObject.Producer);
             Thread workerThread2 = new Thread(workerObject.Consumer);
+            // created new worker for github test
+            Worker worker = new ThreadTest1.Worker();
             // start the thread
             workerThread1.Start();
             workerThread2.Start();
